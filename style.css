@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.png") rgba(00, 0, 0, 0.45);
     background-size: 280px 280px;
 }
 
@@ -131,9 +131,8 @@ a:hover {
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+.d-bloc h6 a {
+    color: #341304 !important;
 }
 
 .d-bloc .a-btn:hover,
@@ -264,12 +263,17 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
+
 .voffset {
     margin-top: 30px;
 }
 
 .voffset-lg {
     margin-top: 80px;
+}
+
+.row-up {
+    position: relative;
 }
 
 .row-no-gutters {
@@ -753,7 +757,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(145, 125, 85, 1);
     padding: 40px 40px 40px 40px;
 }
 
@@ -774,17 +778,18 @@ h4 {
     background-color: #F3976C;
 }
 
+
 .tc-white {
     color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #341304!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #A9603D!important;
     color: #FFFFFF!important;
 }
 
@@ -977,6 +982,7 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
@@ -1039,4 +1045,30 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+/* Modifications apportées */
+
+.flex-centered-block {
+    display: flex;
+    justify-content: center;
+}
+
+.title-frame {
+    background-color: #341304;
+    padding-bottom: 24px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+    width: auto;
+    min-width: 70%;
+}
+
+.texture-paper-clear::before {
+    background: url(img/texture-paper.png);
+}
+
+.footer-text {
+    margin-bottom: 20px;
+    color: #341304!important;
 }
