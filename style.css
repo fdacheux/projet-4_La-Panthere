@@ -830,6 +830,55 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+/* Modifications apportées */
+
+.flex-centered-block {
+    display: flex;
+    justify-content: center;
+}
+
+.title-frame {
+    background-color: #341304;
+    padding-bottom: 24px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+    width: auto;
+    min-width: 70%;
+}
+
+.texture-paper-clear::before {
+    background: url(img/texture-paper.png);
+}
+
+blockquote {
+    border-left-color: #f3976c41;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #0000009d;
+}
+
+figcaption {
+    font-size: 20px;
+    color: #333333ab
+}
+
+.subheader {
+    max-width: 630px;
+    margin: auto;
+}
+
+
+.footer-text {
+    margin-bottom: 20px;
+    color: #341304!important;
+}
+
+/* fin */ 
+
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1047,28 +1096,3 @@ h4 {
     }
 }
 
-/* Modifications apportées */
-
-.flex-centered-block {
-    display: flex;
-    justify-content: center;
-}
-
-.title-frame {
-    background-color: #341304;
-    padding-bottom: 24px;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-radius: 15px;
-    width: auto;
-    min-width: 70%;
-}
-
-.texture-paper-clear::before {
-    background: url(img/texture-paper.png);
-}
-
-.footer-text {
-    margin-bottom: 20px;
-    color: #341304!important;
-}
