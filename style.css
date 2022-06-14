@@ -757,7 +757,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(145, 125, 85, 1);
+    background-color: #3D3424;
     padding: 40px 40px 40px 40px;
 }
 
@@ -771,7 +771,7 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color: hsl(226, 38%, 4%);
 }
 
 .bgc-atomic-tangerine {
@@ -871,10 +871,15 @@ figcaption {
 }
 
 
+.top-of-stack {
+    position: relative;
+    z-index: 5;
+}
 .footer-text {
     margin-bottom: 20px;
     color: #341304!important;
 }
+
 
 /* fin */ 
 
