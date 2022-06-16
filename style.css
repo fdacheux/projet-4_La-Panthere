@@ -328,6 +328,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
+    margin-left: 15px;
     font-size: 16px;
 }
 
@@ -463,9 +464,6 @@ nav .caret {
     background: rgba(0, 0, 0, .3);
 }
 
-button {
-    outline: none!important; /*here*/
-}
 
 .btn-rd {
     border-radius: 40px;
@@ -832,8 +830,38 @@ h4 {
 
 /****** Modifications apportées ******/
 
+.skip-to-content {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 5;
+
+}
+
+.skip-element {
+    outline: none !important;
+    border-radius: 25px;
+    background-color: #F3976C;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #341304 !important; 
+    text-decoration: none !important;        
+    transform: translateY(-40px);
+    opacity: 0;
+    transition: transform 300ms ease-out;
+}
+
+.skip-element:focus {
+    transform: translateY(15px);
+    opacity: 1;
+}
+
 /* Amélioration de la visibilité de la navigation */
 .navbar__list-element{
+    padding: 15px 20px !important;
     transform: scale(1);
     transition: all 300ms ease-in;
 }
@@ -855,7 +883,16 @@ h4 {
     transform: scale(1.1);
 }
 
+.navbar__list-element:focus {
+    outline: #F3976C solid 2px !important;
+}
+
 .navbar__list-element:hover::before {
+    opacity: 0.3;
+}
+
+
+.navbar__list-element:focus::before {
     opacity: 0.3;
 }
 
@@ -868,7 +905,7 @@ nav a:focus {
 }
 
 button:focus {
-    outline:#341304 3px solid !important; 
+    outline:#341304 3px solid; 
 }
 .flex-centered-block {
     display: flex;
