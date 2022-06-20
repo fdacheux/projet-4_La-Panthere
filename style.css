@@ -742,6 +742,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 270px;
+    height: 270px;
 }
 
 .portfolio-row {
@@ -813,19 +815,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 /****** Modifications apportées ******/
@@ -923,7 +925,7 @@ button:focus {
 }
 
 .texture-paper-clear::before {
-    background: url(img/texture-paper.png);
+    background: url(img/texture-paper.webp);
 }
 
 blockquote {
@@ -985,8 +987,15 @@ a.social:focus>span::after, a.social:hover>span::after{
     opacity: 0.4;
 }
 
+.logo-banner {
+    height: 40px;
+    width: 218px;
+}
 
-
+.image-resize-mode {
+    width: 100px;
+    height: 100px;
+}
 
 /* fin */ 
 
@@ -1014,13 +1023,13 @@ a.social:focus>span::after, a.social:hover>span::after{
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1038,10 +1047,6 @@ a.social:focus>span::after, a.social:hover>span::after{
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1050,8 +1055,6 @@ a.social:focus>span::after, a.social:hover>span::after{
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1192,6 +1195,16 @@ a.social:focus>span::after, a.social:hover>span::after{
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+
+    .portfolio-thumb {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .portofolio-row {
+        margin-bottom: 0;
     }
 }
 
