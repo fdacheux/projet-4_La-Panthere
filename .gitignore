@@ -4,3 +4,15 @@ package.json
 commitlint.config.js
 .vscode/
 .husky/
+js/blocs.js
+js/bootsrap.js
+js/formHandler.js
+js/gmaps.js
+js/jqBootstrapValidation.js
+js/jquery-2.1.0.js
+js/jquery.touchSwipe.js
+.gitignore
+style.css
+css/bootsrap.css
+css/et-line.css
+css/font-awesome.css
