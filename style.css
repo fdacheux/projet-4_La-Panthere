@@ -90,7 +90,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png") rgba(00, 0, 0, 0.45);
+    background: url("img/texture-paper.webp") rgba(00, 0, 0, 0.45);
     background-size: 280px 280px;
 }
 
