@@ -678,7 +678,7 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .tight-width-whitespace {
@@ -957,7 +957,7 @@ figcaption {
     color: #341304!important;
 }
 
-a.social>span::after{
+a.social>span.icon-md::after{
     content: '';
     position: absolute;
     top: 0;
@@ -972,7 +972,7 @@ a.social>span::after{
     opacity: 0;
 }
 
-a.social>span{
+a.social>span.icon-md{
     opacity: 1;
     position: relative;
     width: 40px;
@@ -981,6 +981,17 @@ a.social>span{
     background-color: #F3976C;
     border-radius: 5px;
     transition: all 250ms ease-in;
+}
+
+a.social>span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+a.social:hover>span>.social-network-name {
+    transform: scale(1.2);
 }
 
 a.social:focus>span::after, a.social:hover>span::after{
@@ -996,6 +1007,7 @@ a.social:focus>span::after, a.social:hover>span::after{
     width: 100px;
     height: 100px;
 }
+
 
 /* fin */ 
 
@@ -1197,14 +1209,28 @@ a.social:focus>span::after, a.social:hover>span::after{
         height: 320px;
     }
 
+    .portofolio-section__subheader {
+        margin-bottom: 24px;
+    }
+
+    .portfolio-row {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .portfolio-thumb {
         max-width: 100%;
         height: auto;
         margin: auto;
     }
 
-    .portofolio-row {
-        margin-bottom: 0;
+    .col-sm-6 {
+        padding-top: 24px !important;
+    }
+
+    .row.social {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
