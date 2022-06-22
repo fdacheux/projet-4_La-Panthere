@@ -284,6 +284,7 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+    width: 40px;
 }
 
 #bloc-1-hero h1 {
@@ -955,6 +956,11 @@ figcaption {
 .footer-text {
     margin-bottom: 20px;
     color: #341304!important;
+}
+
+.row.social {
+    display: flex;
+    justify-content: space-around;
 }
 
 a.social>span.icon-md::after{
